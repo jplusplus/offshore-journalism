@@ -10,8 +10,13 @@
       <h2 class="main__case-studies__body__heading">Case studies</h2>
       <ul class="list-unstyled">
         <li ng-repeat="item in $ctrl.structure | filter:{category: 'Case studies'}" class="main__case-studies__body__item">
-          <h3>{{ item.name }}</h3>
+          <h3>
+            <a ui-sref="main.page(item)">{{ item.name }}</a>
+          </h3>
           <p ng-bind-html="item.excerpt | unsafe"></p>
+          <a class="btn btn-link main__case-studies__body__item__read-more" ui-sref="main.page(item)">
+            Read more
+          </a>
         </li>
       </ul>
     </div>
@@ -22,8 +27,13 @@
       <h2 class="main__solutions__body__heading">Solutions</h2>
       <ul class="list-unstyled">
         <li ng-repeat="item in $ctrl.structure | filter:{category: 'Solutions'}" class="main__solutions__body__item">
-          <h3>{{ item.name }}</h3>
+          <h3>
+            <a ui-sref="main.page(item)">{{ item.name }}</a>
+          </h3>
           <p ng-bind-html="item.excerpt | unsafe"></p>
+          <a class="btn btn-link main__case-studies__body__item__read-more" ui-sref="main.page(item)">
+            Read more
+          </a>
         </li>
       </ul>
     </div>

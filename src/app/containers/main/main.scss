@@ -1,7 +1,6 @@
 .main {
   width:100%;
   overflow: hidden;
-  padding-bottom:5rem;
 
   &__intro {
     padding:5vw;
@@ -65,7 +64,18 @@
 
       &__item {
         color:white;
-        padding-bottom:$spacer;
+        padding-bottom:$spacer * 2  ;
+
+        a {
+          color:inherit;
+        }
+
+        &__read-more, &__read-more:hover {
+          text-transform: uppercase;
+          border:3px solid white;
+          font-weight: bolder;
+          font-size:0.8em;
+        }
       }
     }
   }
@@ -76,6 +86,10 @@
 
     h3 {
       color: mix($brand-secondary, $body-color, 40);
+    }
+
+    &:after {
+      display: none;
     }
   }
 

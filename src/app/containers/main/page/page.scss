@@ -21,6 +21,20 @@
     h1, h2, h3, h4, h5 {
       color: mix($brand-secondary, $body-color, 40);
     }
+
+    a:not(.btn) {
+      color:darken($brand-secondary, 10);
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    top:0;
+    left:0;
+    right:$spacer;
+    bottom:0;
+    display: block;
+    z-index:100;
   }
 
   &__wrapper {
@@ -28,5 +42,8 @@
     padding:$spacer;
     background:white;
     max-width:880px;
+    position: relative;
+    z-index:200;
   }
+
 }

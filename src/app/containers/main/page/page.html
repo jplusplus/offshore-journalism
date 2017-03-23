@@ -1,4 +1,7 @@
 <div class="main__page main__page--{{ $ctrl.category }}">
+  <a class="main__page__overlay" ui-sref="main">
+    <span class="sr-only">Back home</span>
+  </a>
   <div class="main__page__wrapper">
     <h1>{{ $ctrl.page.name }}</h1>
     <div ng-bind-html="$ctrl.page.html | unsafe"></div>
