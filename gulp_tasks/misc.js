@@ -8,6 +8,7 @@ const conf = require('../conf/gulp.conf');
 
 gulp.task('clean', clean);
 gulp.task('other', other);
+gulp.task('deploy', deploy);
 
 function clean() {
   return del([conf.paths.dist, conf.paths.tmp]);
@@ -22,4 +23,10 @@ function other() {
   ])
     .pipe(fileFilter)
     .pipe(gulp.dest(conf.paths.dist));
+}
+
+function deploy() {
+  return gulp.src('./dist/**/*').pipe(ghPages({
+    remoteUrl: 'git@github.com:jplusplus/offshore-journalism.git'
+  }));
 }

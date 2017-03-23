@@ -8,6 +8,7 @@
     "bootstrap": "4.0.0-alpha.6",
     "cheerio": "^0.22.0",
     "csv-parser": "^1.11.0",
+    "gulp-gh-pages": "^0.5.4",
     "request": "^2.81.0",
     "sanitize-html": "^1.14.1"
   },
