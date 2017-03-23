@@ -12,6 +12,7 @@ gulp.registry(hub);
 
 gulp.task('content', gulp.series('content:structure', 'content:pages'));
 gulp.task('build', gulp.series(gulp.parallel('other', 'content', 'webpack:dist')));
+gulp.task('deploy', gulp.series('build', 'deploy'));
 gulp.task('test', gulp.series('karma:single-run'));
 gulp.task('test:auto', gulp.series('karma:auto-run'));
 gulp.task('serve', gulp.series('webpack:watch', 'watch', 'browsersync'));
