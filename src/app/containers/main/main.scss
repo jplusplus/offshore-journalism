@@ -77,7 +77,7 @@
     &__body {
       margin:0 5vw;
       margin-left:45vw;
-      max-width:770px;
+      max-width:calc(770px - 10vw);
       position: relative;
 
       &__heading {
