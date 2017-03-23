@@ -1,0 +1,32 @@
+.main__page {
+  position: fixed;
+  top:1rem;
+  left:1rem;
+  bottom:1rem;
+  right:1rem;
+  z-index: 100;
+  box-shadow:0 0 0 1rem $body-color;
+  background: rgba($body-color, 0.5);
+  overflow: auto;
+
+  &--case-studies {
+    box-shadow:0 0 0 1rem $brand-primary;
+    background: rgba($brand-primary, 0.5);
+  }
+
+  &--solutions {
+    box-shadow:0 0 0 1rem $brand-secondary;
+    background: rgba($brand-secondary, 0.5);
+
+    h1, h2, h3, h4, h5 {
+      color: mix($brand-secondary, $body-color, 40);
+    }
+  }
+
+  &__wrapper {
+    margin:10vh auto;
+    padding:$spacer;
+    background:white;
+    max-width:880px;
+  }
+}

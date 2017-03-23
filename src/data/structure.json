@@ -1,0 +1,65 @@
+[
+  {
+    "uid": "intro",
+    "category": "Intro page",
+    "name": "Introduction",
+    "file": "",
+    "excerpt": ""
+  },
+  {
+    "uid": "primadanoi",
+    "category": "Case studies",
+    "name": "Primadanoi",
+    "file": "https://docs.google.com/document/d/1-jUJNtsGcjQbXLVQ6syTtm7wr0DQVtX1waVlhPFwYks/pub",
+    "excerpt": "Lucas ipsum dolor sit amet solo windu sidious mara organa han ben c-3p0 ben wicket. Jade gamorrean amidala leia maul wookiee. Secura sith dooku naboo antilles hutt calrissian. Darth fett yoda padmé fett grievous fett. Mace moff naboo jawa palpatine boba organa coruscant."
+  },
+  {
+    "uid": "robots-txt",
+    "category": "Case studies",
+    "name": "Robots.txt",
+    "file": "https://docs.google.com/document/d/1sGMFOLyhF5Hnqe7VOmhPhJc8UoD7EfqiKYzh2aEnJHw/pub",
+    "excerpt": "Tatooine mothma skywalker calrissian fett. Amidala skywalker utapau antilles. Luuke antilles wedge mara"
+  },
+  {
+    "uid": "islamic-news",
+    "category": "Case studies",
+    "name": "Islamic-news",
+    "file": "https://docs.google.com/document/d/1ihHLbgWAqXoE77CzdV_neSW1ZoyorLqVCn990vHhnEE/pub",
+    "excerpt": "Ben skywalker darth kit. Organa hutt darth leia solo jawa. Organa hoth moff wicket sidious organa wampa. Sidious organa darth ahsoka droid jade gamorrean ackbar calamari."
+  },
+  {
+    "uid": "turkey",
+    "category": "Case studies",
+    "name": "Case study in Turkey",
+    "file": "",
+    "excerpt": "Hutt dooku lando kamino mandalorians darth naboo. Kamino gonk organa dooku ventress jinn jabba."
+  },
+  {
+    "uid": "extraterritoriality",
+    "category": "Solutions",
+    "name": "Extraterritoriality",
+    "file": "https://docs.google.com/document/d/1pnRGK1JgAaVlxI4KiU-OpFM6GPPU_zLkpMgZTrJ9nl4/pub",
+    "excerpt": "Lucas ipsum dolor sit amet solo windu sidious mara organa han ben c-3p0 ben wicket. Jade gamorrean amidala leia maul wookiee. Secura sith dooku naboo antilles hutt calrissian. Darth fett yoda padmé fett grievous fett. Mace moff naboo jawa palpatine boba organa coruscant."
+  },
+  {
+    "uid": "internet-archive",
+    "category": "Solutions",
+    "name": "Internet Archive",
+    "file": "",
+    "excerpt": "Tatooine mothma skywalker calrissian fett. Amidala skywalker utapau antilles. Luuke antilles wedge mara"
+  },
+  {
+    "uid": "national-libraries",
+    "category": "Solutions",
+    "name": "National libraries",
+    "file": "",
+    "excerpt": "Hutt dooku lando kamino mandalorians darth naboo. Kamino gonk organa dooku ventress jinn jabba."
+  },
+  {
+    "uid": "about",
+    "category": "About",
+    "name": "About",
+    "file": "",
+    "excerpt": ""
+  }
+]
