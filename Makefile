@@ -4,6 +4,9 @@ run:
 deploy:
 		node_modules/.bin/gulp deploy
 
+build:
+		node_modules/.bin/gulp build
+
 install:
 		yarn || npm install
 

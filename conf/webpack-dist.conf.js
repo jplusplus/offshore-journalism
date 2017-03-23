@@ -26,8 +26,8 @@ module.exports = {
       {
         test: /\.(css|scss)$/,
         loaders: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: 'css-loader?minimize!sass-loader!postcss-loader'
+          fallback: 'style-loader',
+          loader: 'css-loader!sass-loader!postcss-loader'
         })
       },
       {
@@ -69,7 +69,6 @@ module.exports = {
     filename: '[name]-[hash].js'
   },
   entry: {
-    app: `./${conf.path.src('index')}`,
-    vendor: Object.keys(pkg.dependencies)
+    app: ['babel-polyfill', `./${conf.path.src('index')}`]
   }
 };
