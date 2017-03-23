@@ -1,5 +1,5 @@
 const path = require('path');
-
+const ghPages = require('gulp-gh-pages');
 const gulp = require('gulp');
 const del = require('del');
 const filter = require('gulp-filter');
