@@ -43,6 +43,15 @@ module.exports = {
         loaders: [
           'html-loader'
         ]
+      },
+      {
+        test: /\.(jpeg|jpg|png|gif|svg|eot|svg|ttf|woff|woff2)$/i,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]'
+          }
+        }]
       }
     ]
   },
@@ -60,6 +69,11 @@ module.exports = {
       debug: true
     })
   ],
+  resolve: {
+    alias: {
+      images: path.join(process.cwd(), conf.path.src('images'))
+    }
+  },
   devtool: 'source-map',
   output: {
     path: path.join(process.cwd(), conf.paths.tmp),
