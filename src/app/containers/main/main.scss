@@ -6,10 +6,42 @@
     padding:5vw;
     margin-left:40vw;
     max-width:770px;
+    position: relative;
+
+    &__offshore {
+      position: absolute;
+      right:100%;
+      top:5vw;
+      width: 10vw;
+    }
 
     &__heading {
       font-size: 2.3rem;
       letter-spacing: -0.05em;
+    }
+  }
+
+
+  &__newsletter {
+    margin:5vw auto;
+    text-align: center;
+    position: relative;
+
+    &:before {
+      content:"";
+      border-top: 1px solid #bbb;
+      position: absolute;
+      top:-2.5vw;
+      left:50%;
+      width:90vw;
+      max-width: 770px;
+      transform: translateX(-50%) rotate(-2deg);
+    }
+
+    .main &.form-inline div.form-group {
+      text-align: center;
+      display: inline-block;
+      margin:auto;
     }
   }
 
