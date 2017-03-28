@@ -108,6 +108,10 @@ angular-animate@^1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/angular-animate/-/angular-animate-1.6.3.tgz#d228a14f47a4e50bea44ed15bbc4651d44d194f5"
 
+"angular-bind-html-compile@https://github.com/incuna/angular-bind-html-compile/":
+  version "1.2.1"
+  resolved "https://github.com/incuna/angular-bind-html-compile/#50199b0721a40785686fb5616e2f0d4fb397e36a"
+
 angular-cookies@^1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/angular-cookies/-/angular-cookies-1.6.3.tgz#1336af49684348538c329ac07b99e961db99858f"
@@ -115,6 +119,10 @@ angular-cookies@^1.6.3:
 angular-mocks@^1.5.0-beta.2:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.6.3.tgz#12fafc0f1e0903f16864004ba375bf3fb9101ef1"
+
+angular-scroll@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/angular-scroll/-/angular-scroll-1.0.0.tgz#6c916fc5c5a1b8706a6b54ce121ff2574a7b24bd"
 
 angular-ui-router@1.0.0-beta.1:
   version "1.0.0-beta.1"

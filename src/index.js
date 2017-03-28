@@ -3,6 +3,8 @@ import 'babel-polyfill';
 import angular from 'angular';
 import 'angular-animate';
 import 'angular-cookies';
+import 'angular-bind-html-compile';
+import 'angular-scroll';
 
 import unsafeFilter from './app/components/unsafe/unsafe.filter';
 import {main} from './app/containers/main/main';
@@ -18,7 +20,9 @@ angular
   .module(app, [
     'ui.router',
     'ngAnimate',
-    'ngCookies'
+    'ngCookies',
+    'angular-bind-html-compile',
+    'duScroll'
   ])
   .config(routesConfig)
   .filter('unsafe', unsafeFilter)

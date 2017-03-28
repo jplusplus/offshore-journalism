@@ -45,6 +45,8 @@ function pages(done) {
           allowedTags: allowedTags,
           allowedAttributes: allowedAttributes
         });
+        // Add a scrolling directive for anchors
+        row.html = row.html.split('href="#').join('du-smooth-scroll href="#');
         // Saves the page
         fs.writeFile(output, JSON.stringify(row, null, 2), next);
       });
