@@ -3,8 +3,8 @@
     "uid": "intro",
     "category": "Intro",
     "name": "Introduction",
-    "file": "",
-    "excerpt": "Tatooine mothma skywalker calrissian fett. Amidala skywalker utapau antilles. Luuke antilles wedge mara"
+    "file": "https://docs.google.com/document/d/1RSJWtan-7qfZjjmU0AbL6IyBx79-ngQ9NfshoHpycd4/pub",
+    "excerpt": "Content is disappearing from the servers of European publishers. The right to be forgotten, pressure from lawyers and outright censorship all push editors to modify or delete articles. This is a serious and unprecedented threat for the free movement of ideas."
   },
   {
     "uid": "primadanoi",
@@ -18,48 +18,48 @@
     "category": "Case studies",
     "name": "Robots.txt",
     "file": "https://docs.google.com/document/d/1sGMFOLyhF5Hnqe7VOmhPhJc8UoD7EfqiKYzh2aEnJHw/pub",
-    "excerpt": "Tatooine mothma skywalker calrissian fett. Amidala skywalker utapau antilles. Luuke antilles wedge mara"
+    "excerpt": "Although it makes no technical sense, publishers in some countries use the robots.txt file to prevent content from being indexed."
   },
   {
     "uid": "islamic-news",
     "category": "Case studies",
     "name": "Islamic-news",
     "file": "https://docs.google.com/document/d/1ihHLbgWAqXoE77CzdV_neSW1ZoyorLqVCn990vHhnEE/pub",
-    "excerpt": "Ben skywalker darth kit. Organa hutt darth leia solo jawa. Organa hoth moff wicket sidious organa wampa. Sidious organa darth ahsoka droid jade gamorrean ackbar calamari."
+    "excerpt": "In France, the police has sweeping censorship powers and the oversight body has no meaningful way to control it. At least one news website was censored."
   },
   {
     "uid": "turkey",
     "category": "Case studies",
     "name": "Case study in Turkey",
     "file": "",
-    "excerpt": "Hutt dooku lando kamino mandalorians darth naboo. Kamino gonk organa dooku ventress jinn jabba."
+    "excerpt": "Turkish censorship law is similar to France's but its application is more widespread. It shows how the tools of censorship can be used with full force."
   },
   {
     "uid": "extraterritoriality",
     "category": "Solutions",
     "name": "Extraterritoriality",
     "file": "https://docs.google.com/document/d/1pnRGK1JgAaVlxI4KiU-OpFM6GPPU_zLkpMgZTrJ9nl4/pub",
-    "excerpt": "Lucas ipsum dolor sit amet solo windu sidious mara organa han ben c-3p0 ben wicket. Jade gamorrean amidala leia maul wookiee. Secura sith dooku naboo antilles hutt calrissian. Darth fett yoda padmé fett grievous fett. Mace moff naboo jawa palpatine boba organa coruscant."
+    "excerpt": "Several examples show how publishers and journalists have set up offshore vehicles in the past, to protect material or defend against legal threats."
   },
   {
     "uid": "internet-archive",
     "category": "Solutions",
     "name": "Internet Archive",
     "file": "",
-    "excerpt": "Tatooine mothma skywalker calrissian fett. Amidala skywalker utapau antilles. Luuke antilles wedge mara"
+    "excerpt": "The private online library of the Internet Archive lets anyone archive a public webpage. European publishers often block access to their scrapers."
   },
   {
     "uid": "national-libraries",
     "category": "Solutions",
     "name": "National libraries",
     "file": "",
-    "excerpt": "Hutt dooku lando kamino mandalorians darth naboo. Kamino gonk organa dooku ventress jinn jabba."
+    "excerpt": "National libraries carry out archiving as part of their core missions. However, none has managed to balance effectively the need to gather material and make it accessible."
   },
   {
     "uid": "about",
     "category": "Intro",
     "name": "About",
     "file": "",
-    "excerpt": "Ben skywalker darth kit. Organa hutt darth leia solo jawa. Organa hoth moff wicket sidious organa wampa. Sidious organa darth ahsoka droid jade gamorrean ackbar calamari."
+    "excerpt": "The Offshore Journalism Toolkit is a project by Mario Tedeschini-Lalli and Nicolas Kayser-Bril, with help by Anne-Lise Bouyer, Pierre Romera and Dafne Etiok. It was financed by Google's Digital News Initiative."
   }
 ]
