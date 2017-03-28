@@ -8,11 +8,19 @@
     max-width:770px;
     position: relative;
 
+   @include media-breakpoint-down(sm) {
+     margin:0;
+   }
+
     &__offshore {
       position: absolute;
       right:100%;
       top:5vw;
-      width: 10vw;
+      width: 220px;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
     }
 
     &__heading {
@@ -24,6 +32,7 @@
 
   &__newsletter {
     margin:5vw auto;
+    padding:$spacer;
     text-align: center;
     position: relative;
 
@@ -79,6 +88,14 @@
       margin-left:45vw;
       max-width:calc(770px - 10vw);
       position: relative;
+
+      @include media-breakpoint-down(md) {
+        margin-left:25vw;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin:$spacer;
+      }
 
       &__heading {
         position: absolute;
