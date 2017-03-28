@@ -36,7 +36,9 @@ function pages(done) {
         // Final output
         const output = conf.path.data(`page-${row.uid}.json`);
         // Parse and extract the page content
-        row.html = sanitizeHtml($('#contents', res.body).html());
+        row.html = sanitizeHtml($('#contents', res.body).html(), {
+          allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h2', 'sup'])
+        });
         // Saves the page
         fs.writeFile(output, JSON.stringify(row, null, 2), next);
       });
