@@ -1,10 +1,10 @@
 [
   {
     "uid": "intro",
-    "category": "Intro page",
+    "category": "Intro",
     "name": "Introduction",
     "file": "",
-    "excerpt": ""
+    "excerpt": "Tatooine mothma skywalker calrissian fett. Amidala skywalker utapau antilles. Luuke antilles wedge mara"
   },
   {
     "uid": "primadanoi",
@@ -57,9 +57,9 @@
   },
   {
     "uid": "about",
-    "category": "About",
+    "category": "Intro",
     "name": "About",
     "file": "",
-    "excerpt": ""
+    "excerpt": "Ben skywalker darth kit. Organa hutt darth leia solo jawa. Organa hoth moff wicket sidious organa wampa. Sidious organa darth ahsoka droid jade gamorrean ackbar calamari."
   }
 ]

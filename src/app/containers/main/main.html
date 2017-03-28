@@ -8,40 +8,23 @@
 
   <form class="main__newsletter form-inline" action="https://tinyletter.com/Offshorejournalism" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/Offshorejournalism', 'popupwindow', 'scrollbars=yes,width=800,height=600'); return true">
     <div class="form-group">
-      <label for="tlemail" class="form-control-static mb-sm-1">Enter your email address</label><br />
-      <input type="text" name="email" id="tlemail" class="form-control  mr-sm-2" />
+      <label for="tlemail" class="form-control-static mb-sm-1">Be informed when we release our final report</label><br />
+      <input type="text" name="email" id="tlemail" class="form-control  mr-sm-2" placeholder="enter your email" />
       <input type="submit" class="btn btn-primary" value="Subscribe" />
     </div>
     <input type="hidden" value="1" name="embed"/>
   </form>
 
-  <div class="main__case-studies">
-    <div class="main__case-studies__body">
-      <h2 class="main__case-studies__body__heading">Case studies</h2>
+  <div class="main__category--{{ category.slug }} main__category" ng-repeat="category in $ctrl.categories">
+    <div class="main__category__body">
+      <h2 class="main__category__body__heading">{{ category.title }}</h2>
       <ul class="list-unstyled">
-        <li ng-repeat="item in $ctrl.structure | filter:{category: 'Case studies'}" class="main__case-studies__body__item">
+        <li ng-repeat="item in $ctrl.structure | filter:{category: category.title}" class="main__category__body__item">
           <h3>
             <a ui-sref="main.page(item)">{{ item.name }}</a>
           </h3>
           <p ng-bind-html="item.excerpt | unsafe"></p>
-          <a class="btn btn-link main__case-studies__body__item__read-more" ui-sref="main.page(item)">
-            Read more
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="main__solutions">
-    <div class="main__solutions__body">
-      <h2 class="main__solutions__body__heading">Solutions</h2>
-      <ul class="list-unstyled">
-        <li ng-repeat="item in $ctrl.structure | filter:{category: 'Solutions'}" class="main__solutions__body__item">
-          <h3>
-            <a ui-sref="main.page(item)">{{ item.name }}</a>
-          </h3>
-          <p ng-bind-html="item.excerpt | unsafe"></p>
-          <a class="btn btn-link main__case-studies__body__item__read-more" ui-sref="main.page(item)">
+          <a class="btn btn-link main__category__body__item__read-more" ui-sref="main.page(item)">
             Read more
           </a>
         </li>

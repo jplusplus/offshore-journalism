@@ -45,7 +45,7 @@
     }
   }
 
-  &__case-studies, &__solutions {
+  &__category {
     background: $brand-primary;
     min-height:10rem;
     position:relative;
@@ -112,7 +112,19 @@
     }
   }
 
-  &__solutions {
+  &__category--intro {
+    z-index:10;
+    background:$gray-light;
+    h3 {
+      color: $gray;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &__category--solutions {
     z-index:20;
     background:$brand-secondary;
 
