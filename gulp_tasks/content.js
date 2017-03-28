@@ -35,9 +35,15 @@ function pages(done) {
       request.get(row.file, (err, res) => {
         // Final output
         const output = conf.path.data(`page-${row.uid}.json`);
+        // Emprove sanitizing
+        const allowedTags = sanitizeHtml.defaults.allowedTags.concat(['h2', 'sup']);
+        const allowedAttributes = sanitizeHtml.defaults.allowedAttributes;
+        // Must allow ids on a tags
+        allowedAttributes.a = allowedAttributes.a.concat('id');
         // Parse and extract the page content
         row.html = sanitizeHtml($('#contents', res.body).html(), {
-          allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h2', 'sup'])
+          allowedTags: allowedTags,
+          allowedAttributes: allowedAttributes
         });
         // Saves the page
         fs.writeFile(output, JSON.stringify(row, null, 2), next);
