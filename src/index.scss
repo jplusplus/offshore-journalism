@@ -12,6 +12,7 @@ $brand-inverse: #484846;
 
 $body-bg: #fafaff;
 $body-color: #353535;
+$link-color: mix($body-color, $brand-primary);
 
 $btn-primary-color: white;
 $headings-color: mix($brand-primary, $body-color, 40);
