@@ -1,8 +1,10 @@
 <div class="main__page main__page--{{ $ctrl.category }}" du-scroll-container>
-  <a class="main__page__overlay" ui-sref="main">
-    <span class="sr-only">Back home</span>
-  </a>
+  <a class="main__page__overlay" ui-sref="main"></a>
   <div class="main__page__wrapper">
+    <a class="main__page__wrapper__close" ui-sref="main">
+      X
+      <span class="sr-only">Back home</span>
+    </a>
     <h1>{{ $ctrl.page.name }}</h1>
     <div bind-html-compile="$ctrl.page.html"></div>
   </div>
