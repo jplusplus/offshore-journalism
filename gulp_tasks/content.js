@@ -7,7 +7,7 @@ const csv = require('csv-parser')
 const request = require('request');
 const $ = require('cheerio');
 const sanitizeHtml = require('sanitize-html');
-const XRegExp = require('xregexp');
+const xregexp = require('xregexp');
 
 const STRUCTURE_URL = 'https://docs.google.com/spreadsheets/d/1cQjplOsQMm2mPWlwHOUr3JzlSwO5R6KHYFcHLrnJDpQ/pub?output=csv';
 
@@ -47,14 +47,15 @@ function pages(done) {
           allowedAttributes: allowedAttributes
         });
         // Interprets Markdwon markup
-        row.html = XRegExp.replaceEach(row.html, 
-          [
-            [/\*\*(.*?)\*\*/, "<strong>$1</strong>", "all"],
-            [/_(.*?)_/, "<em>$1</em>", "all"],
-            [/<h3>(.*?)<\/h3>/, "<blockquote>$1</blockquote>", "all"]
-          ]);
+        row.html = xregexp.replaceEach(row.html,[
+          [/\*\*(.*?)\*\*/, "<strong>$1</strong>", "all"],
+          [/_(.*?)_/, "<em>$1</em>", "all"],
+          [/<h3>(.*?)<\/h3>/, "<blockquote>$1</blockquote>", "all"]
+        ]);
         // Add a scrolling directive for anchors
         row.html = row.html.split('href="#').join('du-smooth-scroll href="#');
+        // Add blockquote classes
+        row.html = row.html.split('<blockquote').join('<blockquote class="blockquote"');
         // Saves the page
         fs.writeFile(output, JSON.stringify(row, null, 2), next);
       });
