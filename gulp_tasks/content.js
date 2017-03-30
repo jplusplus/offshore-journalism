@@ -48,14 +48,12 @@ function pages(done) {
         });
         // Interprets Markdwon markup
         row.html = xregexp.replaceEach(row.html,[
-          [/\*\*(.*?)\*\*/, "<strong>$1</strong>", "all"],
-          [/_(.*?)_/, "<em>$1</em>", "all"],
-          [/<h3>(.*?)<\/h3>/, "<blockquote>$1</blockquote>", "all"]
+          [/\*\*(.*?)\*\*/, '<strong>$1</strong>', 'all'],
+          [/_(.*?)_/, '<em>$1</em>', 'all'],
+          [/<h3>(.*?)<\/h3>/, '<blockquote class="blockquote">$1</blockquote>', 'all']
         ]);
         // Add a scrolling directive for anchors
         row.html = row.html.split('href="#').join('du-smooth-scroll href="#');
-        // Add blockquote classes
-        row.html = row.html.split('<blockquote').join('<blockquote class="blockquote"');
         // Saves the page
         fs.writeFile(output, JSON.stringify(row, null, 2), next);
       });
