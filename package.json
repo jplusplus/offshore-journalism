@@ -67,6 +67,7 @@
     "node-sass": "^3.4.2",
     "phantomjs-prebuilt": "^2.1.6",
     "postcss-loader": "^0.8.0",
+    "xregexp": "^3.1.1",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
     "webpack": "2.1.0-beta.27",
