@@ -14,6 +14,13 @@
     "excerpt": "A small website in the Abruzzo region, Primadanoi was forced to go to court to defend its right to keep its archive online. The Italian supreme court decided against the newspaper, which had to delete some articles because they were past their expiration date."
   },
   {
+    "uid": "fawkes",
+    "category": "Case studies",
+    "name": "The Guido Fawkes blog",
+    "file": "https://docs.google.com/document/d/1AU7doMGHt0P-yuHPuSh64h544GLbHycQk-UbIiLTwdI/pub",
+    "excerpt": "Paul Staines talks about the offshore structure he set up to run order-order.com, a website known for its circumvention of British court orders."
+  },
+  {
     "uid": "robots-txt",
     "category": "Case studies",
     "name": "Robots.txt",
