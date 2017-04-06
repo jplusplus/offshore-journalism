@@ -37,7 +37,7 @@ function pages(done) {
         // Final output
         const output = conf.path.data(`page-${row.uid}.json`);
         // Emprove sanitizing
-        const allowedTags = sanitizeHtml.defaults.allowedTags.concat(['h2', 'sup']);
+        const allowedTags = sanitizeHtml.defaults.allowedTags.concat(['h2', 'sup', 'img']);
         const allowedAttributes = sanitizeHtml.defaults.allowedAttributes;
         // Must allow ids on a tags
         allowedAttributes.a = allowedAttributes.a.concat('id');
@@ -49,7 +49,7 @@ function pages(done) {
         // Interprets Markdwon markup
         row.html = xregexp.replaceEach(row.html,[
           [/\*\*(.*?)\*\*/, '<strong>$1</strong>', 'all'],
-          [/_(.*?)_/, '<em>$1</em>', 'all'],
+          [/__(.*?)__/, '<em>$1</em>', 'all'],
           [/<h3>(.*?)<\/h3>/, '<blockquote class="blockquote">$1</blockquote>', 'all']
         ]);
         // Add a scrolling directive for anchors
