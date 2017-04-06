@@ -4,7 +4,7 @@
     "category": "Intro",
     "name": "Introduction",
     "file": "https://docs.google.com/document/d/1RSJWtan-7qfZjjmU0AbL6IyBx79-ngQ9NfshoHpycd4/pub",
-    "excerpt": "Content is disappearing from the servers of European publishers. The right to be forgotten, pressure from lawyers and outright censorship all push editors to modify or delete articles. This is a serious and unprecedented threat for the free movement of ideas."
+    "excerpt": "Content is disappearing from the servers of European publishers. The right to be forgotten, pressure from lawyers and outright censorship all push editors to modify or delete articles. This is a serious and growing threat for the free movement of ideas."
   },
   {
     "uid": "primadanoi",
@@ -54,5 +54,19 @@
     "name": "About",
     "file": "https://docs.google.com/document/d/1H96u_yac6YHve2LkFMeaYfhBQ_SsJGrlN8O4jf7xLUY/pub",
     "excerpt": "The Offshore Journalism Toolkit is a project by Mario Tedeschini-Lalli and Nicolas Kayser-Bril, with help by Anne-Lise Bouyer, Pierre Romera and Defne Altiok. It was financed by Google's Digital News Initiative."
+  },
+  {
+    "uid": "internet-archive",
+    "category": "Solutions",
+    "name": "The Internet Archive",
+    "file": "",
+    "excerpt": "The private online library of the Internet Archive lets anyone archive a public webpage. European publishers often block access to their scrapers."
+  },
+  {
+    "uid": "national-libraries",
+    "category": "Solutions",
+    "name": "National libraries",
+    "file": "",
+    "excerpt": "National libraries carry out archiving as part of their core missions. However, none has managed to balance effectively the need to gather material and make it accessible."
   }
 ]
