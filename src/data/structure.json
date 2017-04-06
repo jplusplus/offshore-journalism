@@ -4,41 +4,41 @@
     "category": "Intro",
     "name": "Introduction",
     "file": "https://docs.google.com/document/d/1RSJWtan-7qfZjjmU0AbL6IyBx79-ngQ9NfshoHpycd4/pub",
-    "excerpt": "Content is disappearing from the servers of European publishers. The right to be forgotten, pressure from lawyers and outright censorship all push editors to modify or delete articles. This is a serious and unprecedented threat for the free movement of ideas."
+    "excerpt": "Content is disappearing from the servers of European publishers. The right to be forgotten, pressure from lawyers and outright censorship all push editors to modify or delete articles. This is a serious and growing threat for the free movement of ideas."
   },
   {
     "uid": "primadanoi",
     "category": "Case studies",
-    "name": "Primadanoi",
+    "name": "Italy: When news have an expiration date",
     "file": "https://docs.google.com/document/d/1-jUJNtsGcjQbXLVQ6syTtm7wr0DQVtX1waVlhPFwYks/pub",
     "excerpt": "A small website in the Abruzzo region, Primadanoi was forced to go to court to defend its right to keep its archive online. The Italian supreme court decided against the newspaper, which had to delete some articles because they were past their expiration date."
   },
   {
     "uid": "fawkes",
     "category": "Case studies",
-    "name": "The Guido Fawkes blog",
+    "name": "England: From offshore hedge fund management to offshore journalism protection",
     "file": "https://docs.google.com/document/d/1AU7doMGHt0P-yuHPuSh64h544GLbHycQk-UbIiLTwdI/pub",
     "excerpt": "Paul Staines talks about the offshore structure he set up to run order-order.com, a website known for its circumvention of British court orders."
   },
   {
     "uid": "robots-txt",
     "category": "Case studies",
-    "name": "Robots.txt",
+    "name": "Italy: Hiding in plain view",
     "file": "https://docs.google.com/document/d/1sGMFOLyhF5Hnqe7VOmhPhJc8UoD7EfqiKYzh2aEnJHw/pub",
     "excerpt": "Although it makes no technical sense, publishers in some countries use the robots.txt file to prevent content from being indexed."
   },
   {
     "uid": "islamic-news",
     "category": "Case studies",
-    "name": "Islamic-news",
+    "name": "France: Censorship in theory and practice",
     "file": "https://docs.google.com/document/d/1ihHLbgWAqXoE77CzdV_neSW1ZoyorLqVCn990vHhnEE/pub",
     "excerpt": "In France, the police has sweeping censorship powers and the oversight body has no meaningful way to control it. At least one news website was censored."
   },
   {
     "uid": "turkey",
     "category": "Case studies",
-    "name": "Case study in Turkey",
-    "file": "",
+    "name": "Turkey: France-style censorship, at scale",
+    "file": "https://docs.google.com/document/d/1_mWcibINhIPGP9neV6IRf9dP9huEoodELm4E3MVvcMU/pub",
     "excerpt": "Turkish censorship law is similar to France's but its application is more widespread. It shows how the tools of censorship can be used with full force."
   },
   {
@@ -49,9 +49,16 @@
     "excerpt": "Several examples show how publishers and journalists have set up offshore vehicles in the past, to protect material or defend against legal threats."
   },
   {
+    "uid": "about",
+    "category": "Intro",
+    "name": "About",
+    "file": "https://docs.google.com/document/d/1H96u_yac6YHve2LkFMeaYfhBQ_SsJGrlN8O4jf7xLUY/pub",
+    "excerpt": "The Offshore Journalism Toolkit is a project by Mario Tedeschini-Lalli and Nicolas Kayser-Bril, with help by Anne-Lise Bouyer, Pierre Romera and Defne Altiok. It was financed by Google's Digital News Initiative."
+  },
+  {
     "uid": "internet-archive",
     "category": "Solutions",
-    "name": "Internet Archive",
+    "name": "The Internet Archive",
     "file": "",
     "excerpt": "The private online library of the Internet Archive lets anyone archive a public webpage. European publishers often block access to their scrapers."
   },
@@ -61,12 +68,5 @@
     "name": "National libraries",
     "file": "",
     "excerpt": "National libraries carry out archiving as part of their core missions. However, none has managed to balance effectively the need to gather material and make it accessible."
-  },
-  {
-    "uid": "about",
-    "category": "Intro",
-    "name": "About",
-    "file": "",
-    "excerpt": "The Offshore Journalism Toolkit is a project by Mario Tedeschini-Lalli and Nicolas Kayser-Bril, with help by Anne-Lise Bouyer, Pierre Romera and Defne Altiok. It was financed by Google's Digital News Initiative."
   }
 ]
