@@ -11,7 +11,7 @@
         Our understanding of the past will be dramatically hampered by the chunks of content that disappeared from the web. What if a key element of your next leader's biography was deleted from the archive of your country's newspapers?
       </p>
       <p>
-        Solutions exist. National and private archives can step up. Offshore vehicles can be created to keep a copy of a newspaper's archive. But time is running out. This website is a work in progress, part of an ongoing project to analyze the problem in detail and to explore possible solutions. Here is something to start the ball rolling, let us know what your experiences and your opinions, we will be adding content as we prepare a full report.       
+        Solutions exist. National and private archives can step up. Offshore vehicles can be created to keep a copy of a newspaper's archive. But time is running out. This website is a work in progress, part of an ongoing project to analyze the problem in detail and to explore possible solutions. Here is something to start the ball rolling, let us know your experiences and your opinions, we will be adding content as we prepare a full report.       
       </p>
       <P>
         Your can contact us at <a href="mailto:contact@offshorejournalism.com">contact@offshorejournalism.com</a> - your comments are highly appreciated.
@@ -38,7 +38,8 @@
           </h3>
           <p ng-bind-html="item.excerpt | unsafe"></p>
           <a class="btn btn-link main__category__body__item__read-more" ui-sref="main.page(item)">
-            Read more
+            <span ng-if="item.file == ''">Coming soon</span>
+            <span ng-if="item.file != ''">Read more</span>
           </a>
         </li>
       </ul>
