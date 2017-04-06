@@ -318,10 +318,10 @@ blockquote {
   margin: 0 0 1rem; }
 
 a {
-  color: #9C9CEA;
+  color: #696990;
   text-decoration: none; }
   a:focus, a:hover {
-    color: #5d5ddd;
+    color: #494964;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -2004,7 +2004,7 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: normal;
-  color: #9C9CEA;
+  color: #696990;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled {
     background-color: transparent; }
@@ -2013,7 +2013,7 @@ fieldset[disabled] a.btn {
   .btn-link:hover {
     border-color: transparent; }
   .btn-link:focus, .btn-link:hover {
-    color: #5d5ddd;
+    color: #494964;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link:disabled {
@@ -3016,11 +3016,11 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #9C9CEA;
+  color: #696990;
   background-color: #fff;
   border: 1px solid #ddd; }
   .page-link:focus, .page-link:hover {
-    color: #5d5ddd;
+    color: #494964;
     text-decoration: none;
     background-color: #eceeef;
     border-color: #ddd; }
@@ -5810,16 +5810,23 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     margin-left: 40vw;
     max-width: 770px;
     position: relative; }
+    @media (max-width: 767px) {
+      .main__intro {
+        margin: 0; } }
     .main__intro__offshore {
       position: absolute;
       right: 100%;
       top: 5vw;
-      width: 10vw; }
+      width: 220px; }
+      @media (max-width: 767px) {
+        .main__intro__offshore {
+          display: none; } }
     .main__intro__heading {
       font-size: 2.3rem;
       letter-spacing: -0.05em; }
   .main__newsletter {
     margin: 5vw auto;
+    padding: 1rem;
     text-align: center;
     position: relative; }
     .main__newsletter:before {
@@ -5835,14 +5842,14 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       text-align: center;
       display: inline-block;
       margin: auto; }
-  .main__case-studies, .main__solutions {
+  .main__category {
     background: #9C9CEA;
     min-height: 10rem;
     position: relative;
     width: 100%;
     z-index: 10;
     padding: 5vh 0; }
-    .main__case-studies:before, .main__case-studies:after, .main__solutions:before, .main__solutions:after {
+    .main__category:before, .main__category:after {
       content: "";
       background: inherit;
       position: absolute;
@@ -5851,18 +5858,24 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       right: -1rem;
       height: 5rem;
       transform: rotate(-2deg); }
-    .main__case-studies:before, .main__solutions:before {
+    .main__category:before {
       top: 0;
       transform-origin: top left; }
-    .main__case-studies:after, .main__solutions:after {
+    .main__category:after {
       bottom: 0;
       transform-origin: bottom right; }
-    .main__case-studies__body, .main__solutions__body {
+    .main__category__body {
       margin: 0 5vw;
       margin-left: 45vw;
-      max-width: 770px;
+      max-width: calc(770px - 10vw);
       position: relative; }
-      .main__case-studies__body__heading, .main__solutions__body__heading {
+      @media (max-width: 991px) {
+        .main__category__body {
+          margin-left: 25vw; } }
+      @media (max-width: 767px) {
+        .main__category__body {
+          margin: 1rem; } }
+      .main__category__body__heading {
         position: absolute;
         right: 100%;
         bottom: 100%;
@@ -5874,22 +5887,29 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
         color: rgba(255, 255, 255, 0.7);
         text-align: right;
         white-space: nowrap; }
-      .main__case-studies__body__item, .main__solutions__body__item {
+      .main__category__body__item {
         color: white;
         padding-bottom: 2rem; }
-        .main__case-studies__body__item a, .main__solutions__body__item a {
+        .main__category__body__item a {
           color: inherit; }
-        .main__case-studies__body__item__read-more, .main__case-studies__body__item__read-more:hover, .main__solutions__body__item__read-more, .main__solutions__body__item__read-more:hover {
+        .main__category__body__item__read-more, .main__category__body__item__read-more:hover {
           text-transform: uppercase;
           border: 3px solid white;
           font-weight: bolder;
           font-size: 0.8em; }
-  .main__solutions {
+  .main__category--intro {
+    z-index: 10;
+    background: #636c72; }
+    .main__category--intro h3 {
+      color: #464a4c; }
+    .main__category--intro:after {
+      display: none; }
+  .main__category--solutions {
     z-index: 20;
     background: #EABB9C; }
-    .main__solutions h3 {
+    .main__category--solutions h3 {
       color: #7d6b5e; }
-    .main__solutions:after {
+    .main__category--solutions:after {
       display: none; }
   .main__view {
     position: relative;
@@ -5924,17 +5944,34 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     position: fixed;
     top: 0;
     left: 0;
-    right: 1rem;
+    right: 2.5rem;
     bottom: 0;
     display: block;
     z-index: 100; }
   .main__page__wrapper {
     margin: 10vh auto;
-    padding: 1rem;
+    padding: 2rem;
     background: white;
-    max-width: 880px;
+    max-width: 700px;
     position: relative;
-    z-index: 200; }
+    z-index: 200;
+    font-size: 1.1em;
+    line-height: 1.58;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .main__page__wrapper__close {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      font-weight: 300;
+      font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    @media (max-width: 767px) {
+      .main__page__wrapper {
+        margin: 0; } }
+    .main__page__wrapper img {
+      width: 100%; }
 
 body.\--in-view {
   overflow: hidden; }
